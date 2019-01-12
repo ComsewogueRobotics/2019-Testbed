@@ -11,10 +11,10 @@ import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
 /**
- * An example command.  You can replace me with your own command.
+ * This is the main command for the DriveTrain subsystem.
  */
-public class DriveCommand extends Command {
-  public DriveCommand() {
+public class Drive extends Command {
+  public Drive() {
     // Use requires() here to declare subsystem dependencies
     requires(Robot.m_subsystem);
   }
