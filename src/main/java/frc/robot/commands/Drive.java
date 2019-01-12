@@ -16,7 +16,7 @@ import frc.robot.Robot;
 public class Drive extends Command {
   public Drive() {
     // Use requires() here to declare subsystem dependencies
-    requires(Robot.m_subsystem);
+    requires(Robot.driveTrain);
   }
 
   // Called just before this Command runs the first time
@@ -27,6 +27,7 @@ public class Drive extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
+    Robot.driveTrain.arcadeDrive(Robot.oi.driverStick.getY(), Robot.oi.driverStick.getX());
   }
 
   // Make this return true when this Command no longer needs to run execute()
